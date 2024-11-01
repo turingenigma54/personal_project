@@ -35,9 +35,7 @@ jspm_packages
 # VSCode settings
 .vscode
 
-# Docker files
-docker-compose.yml
-Dockerfile
+
 
 # Env files
 .env
