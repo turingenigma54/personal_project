@@ -16,7 +16,7 @@ const generateData = () => {
 const sendData = async () => {
     try {
         const data = generateData();
-        const response = await axios.post('http://localhost:3000/ingest', data);
+        const response = await axios.post('http://app:3000/ingest', data);
         console.log('Data sent: ', data);
         console.log('Response: ', response.data);
     } catch (error) {

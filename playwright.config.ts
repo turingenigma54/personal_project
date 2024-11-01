@@ -4,8 +4,9 @@ import { PlaywrightTestConfig } from '@playwright/test';
 const config: PlaywrightTestConfig = {
     testDir: './tests',
     timeout: 30000,
+    reporter: [['html', { outputFolder: 'playwright-report' }]],
     use : {
-        baseURL: 'http://localhost:3000/'
+        baseURL: 'http://app:3000/'
     },
 };
 
